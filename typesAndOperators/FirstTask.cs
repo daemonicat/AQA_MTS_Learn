@@ -1,67 +1,69 @@
 // See https://aka.ms/new-console-template for more information
 
-class firstTask
+public static class FirstTask
 {
     public static void Main(){
-        var empty = false;
-        float firstNumber = 0;
-        float secondNumber = 0;
+        var EmptyInput = false;
+        float FirstNumber = 0;
+        float SecondNumber = 0;
 
         Console.WriteLine("Enter first number");
-        var firstNumberStr = Console.ReadLine();
+        var FirstNumberStr = Console.ReadLine();
         try
         {
-            firstNumber = Single.Parse(firstNumberStr);
+            FirstNumber = Single.Parse(FirstNumberStr);
         }
         catch (FormatException e)
         {
+            EmptyInput = true;
             Console.WriteLine(e.Message);
         }
 
         Console.WriteLine("Enter valid operation: (+, -, *, /)");
-        var operationSign = Console.ReadLine();
+        var OperationSign = Console.ReadLine();
 
         Console.WriteLine("Enter second number");
-        var secondNumberStr = Console.ReadLine();
+        var SecondNumberStr = Console.ReadLine();
         try
         {
-            secondNumber = Single.Parse(secondNumberStr);
+            SecondNumber = Single.Parse(SecondNumberStr);
         }
         catch (FormatException e)
         {
+            EmptyInput = true;
             Console.WriteLine(e.Message);
         }
         
-        if (string.IsNullOrEmpty(operationSign))
+        if (string.IsNullOrEmpty(OperationSign))
         {
-            empty = true;
+            EmptyInput = true;
             Console.WriteLine("Enter both numbers and operation sign please");
         }
 
-        if (!empty)
+        if (!EmptyInput)
         {
             float result;
-            switch (operationSign)
+            switch (OperationSign)
             {
                 case "+":
-                    result = firstNumber + secondNumber;
+                    result = FirstNumber + SecondNumber;
                     Console.WriteLine(result);
                     break;
                 case "-":
-                    result = firstNumber - secondNumber;
+                    result = FirstNumber - SecondNumber;
                     Console.WriteLine(result);
                     break;
                 case "*":
-                    result = firstNumber * secondNumber;
+                    result = FirstNumber * SecondNumber;
                     Console.WriteLine(result);
                     break;
                 case "/":
-                    if (secondNumber == 0)
+                    if (SecondNumber == 0)
                     {
                         Console.WriteLine("Can not divide by 0");
                     } else
                     {
-                        result = firstNumber / secondNumber;
+                        result = FirstNumber / SecondNumber;
                         Console.WriteLine(result);
                     }
                     break;
