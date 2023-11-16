@@ -3,74 +3,72 @@
 public static class FirstTask
 {
     public static void Main(){
-        var EmptyInput = false;
-        float FirstNumber = 0;
-        float SecondNumber = 0;
+        var emptyInput = false;
+        float firstNumber = 0;
+        float secondNumber = 0;
 
         Console.WriteLine("Enter first number");
-        var FirstNumberStr = Console.ReadLine();
+        var firstNumberStr = Console.ReadLine();
         try
         {
-            FirstNumber = Single.Parse(FirstNumberStr);
+            firstNumber = float.Parse(firstNumberStr);
         }
         catch (FormatException e)
         {
-            EmptyInput = true;
+            emptyInput = true;
             Console.WriteLine(e.Message);
         }
 
         Console.WriteLine("Enter valid operation: (+, -, *, /)");
-        var OperationSign = Console.ReadLine();
+        var operationSign = Console.ReadLine();
 
         Console.WriteLine("Enter second number");
-        var SecondNumberStr = Console.ReadLine();
+        var secondNumberStr = Console.ReadLine();
         try
         {
-            SecondNumber = Single.Parse(SecondNumberStr);
+            secondNumber = Single.Parse(secondNumberStr);
         }
         catch (FormatException e)
         {
-            EmptyInput = true;
+            emptyInput = true;
             Console.WriteLine(e.Message);
         }
         
-        if (string.IsNullOrEmpty(OperationSign))
+        if (string.IsNullOrEmpty(operationSign))
         {
-            EmptyInput = true;
+            emptyInput = true;
             Console.WriteLine("Enter both numbers and operation sign please");
         }
 
-        if (!EmptyInput)
+        if (emptyInput) return;
+        float result;
+        switch (operationSign)
         {
-            float result;
-            switch (OperationSign)
-            {
-                case "+":
-                    result = FirstNumber + SecondNumber;
+            case "+":
+                result = firstNumber + secondNumber;
+                Console.WriteLine(result);
+                break;
+            case "-":
+                result = firstNumber - secondNumber;
+                Console.WriteLine(result);
+                break;
+            case "*":
+                result = firstNumber * secondNumber;
+                Console.WriteLine(result);
+                break;
+            case "/":
+                if (secondNumber == 0)
+                {
+                    Console.WriteLine("Can not divide by 0");
+                } else
+                {
+                    result = firstNumber / secondNumber;
                     Console.WriteLine(result);
-                    break;
-                case "-":
-                    result = FirstNumber - SecondNumber;
-                    Console.WriteLine(result);
-                    break;
-                case "*":
-                    result = FirstNumber * SecondNumber;
-                    Console.WriteLine(result);
-                    break;
-                case "/":
-                    if (SecondNumber == 0)
-                    {
-                        Console.WriteLine("Can not divide by 0");
-                    } else
-                    {
-                        result = FirstNumber / SecondNumber;
-                        Console.WriteLine(result);
-                    }
-                    break;
-                default:
-                    Console.WriteLine("Use only this symbols as operation sign: +, -, *, /");
-                    break;
-            }
-        } 
+                }
+                break;
+            default:
+                Console.WriteLine("Use only this symbols as operation sign: +, -, *, /");
+                break;
+        }
     }
 }
