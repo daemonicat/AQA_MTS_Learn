@@ -2,19 +2,17 @@ public static class ThirdTask
 {
     public static void Main()
     {
-        var emptyInput = false;
-
         Console.WriteLine("Enter \"weather\" word");
         var weatherWord = Console.ReadLine();
-        
+
         if (string.IsNullOrEmpty(weatherWord))
         {
-            emptyInput = true;
             Console.WriteLine("Enter \"weather\" word please!");
+            return;
         }
 
-        if (emptyInput) return;
         weatherWord = weatherWord?.ToLower();
+
         switch (weatherWord)
         {
             case "погода":

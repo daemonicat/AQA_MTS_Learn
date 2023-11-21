@@ -2,8 +2,7 @@ public static class SecondTask
 {
     public static void Main()
     {
-        var emptyInput = false;
-        float inputNumber = 0;
+        float inputNumber;
 
         Console.WriteLine("Enter your number");
         var inputNumberStr = Console.ReadLine();
@@ -13,11 +12,16 @@ public static class SecondTask
         }
         catch (FormatException e)
         {
-            emptyInput = true;
             Console.WriteLine(e.Message);
+            return;
         }
 
-        if (emptyInput) return;
+        if (inputNumber is < -50 or > 50)
+        {
+            Console.WriteLine("Enter valid number in range [-50;50]");
+            return;
+        }
+
         switch (inputNumber)
         {
             case >= -40 and <= -10:

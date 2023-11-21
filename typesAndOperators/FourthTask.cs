@@ -2,8 +2,7 @@ public static class FourthTask
 {
     public static void Main()
     {
-        var emptyInput = false;
-        var inputNumber = 0;
+        int inputNumber;
 
         Console.WriteLine("Enter your number");
         var inputNumberStr = Console.ReadLine();
@@ -13,11 +12,10 @@ public static class FourthTask
         }
         catch (FormatException e)
         {
-            emptyInput = true;
             Console.WriteLine(e.Message);
+            return;
         }
 
-        if (emptyInput) return;
         //First solution
         Console.WriteLine(inputNumber % 2 == 0 ? "This number is even!" : "This number is odd!");
         //Second solution
