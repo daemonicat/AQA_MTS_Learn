@@ -123,4 +123,38 @@ foreach (int item in array)
     Console.Write($"{item} ");
 }*/
 
-FirstTask.Main();
+Console.WriteLine("Enter task number");
+int inputNumber;
+
+var inputNumberStr = Console.ReadLine();
+try
+{
+    inputNumber = int.Parse(inputNumberStr);
+}
+catch (FormatException e)
+{
+    Console.WriteLine(e.Message);
+    return;
+}
+
+switch (inputNumber)
+{
+    case 1:
+        FirstTask.InArrayOrNot();
+        break;
+    case 2:
+        SecondTask.DeleteEntry();
+        break;
+    case 3:
+        ThirdTask.MinMaxAverage();
+        break;
+    case 4:
+        FourthTask.AverageInArrays();
+        break;
+    case 8:
+        EightTask.BubbleSort();
+        break;
+    default:
+        Console.WriteLine("Wrong number");
+        break;
+}

@@ -1,6 +1,6 @@
 public static class FourthTask
 {
-    public static void Main()
+    public static void AverageInArrays()
     {
         int[] array = { 1, 6, 4, 2, 9 };
         int[] array1 = { 5, 14, 10, 3, 7 };

@@ -1,8 +1,8 @@
 public static class ThirdTask
 {
-    public static void Main()
+    public static void MinMaxAverage()
     {
-        var inputNumber = 0;
+        int inputNumber;
 
         Console.Write("Enter your number: ");
         var inputNumberStr = Console.ReadLine();
