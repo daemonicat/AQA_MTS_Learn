@@ -1,10 +1,7 @@
-using System.Collections.Immutable;
-
 public static class ThirdTask
 {
     public static void Main()
     {
-        var emptyInput = false;
         var inputNumber = 0;
 
         Console.Write("Enter your number: ");
@@ -15,11 +12,9 @@ public static class ThirdTask
         }
         catch (FormatException e)
         {
-            emptyInput = true;
             Console.WriteLine(e.Message);
+            return;
         }
-
-        if (emptyInput) return;
 
         int[] array = new int[inputNumber];
 

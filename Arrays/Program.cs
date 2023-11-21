@@ -123,4 +123,4 @@ foreach (int item in array)
     Console.Write($"{item} ");
 }*/
 
-EightTask.BubbleSort();
+FirstTask.Main();

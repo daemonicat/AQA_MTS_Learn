@@ -2,7 +2,6 @@ public static class FirstTask
 {
     public static void Main()
     {
-        var emptyInput = false;
         var notInArray = true;
         int[] array = { 1, 6, 4, 2, 9, 5 };
         var inputNumber = 0;
@@ -15,11 +14,10 @@ public static class FirstTask
         }
         catch (FormatException e)
         {
-            emptyInput = true;
             Console.WriteLine(e.Message);
+            return;
         }
 
-        if (emptyInput) return;
         foreach (var item in array)
         {
             if (item == inputNumber) notInArray = false;
