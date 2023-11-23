@@ -41,7 +41,7 @@
                 tmpIndex = f_str.IndexOf('i', tmpIndex) + 1;
             }*/
             
-            FourthTask.SubstringInsert();
+            //SecondTask.SecondApp();
         }
     }
 }
