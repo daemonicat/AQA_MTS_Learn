@@ -6,7 +6,7 @@ namespace StringApp
         {
             string inputString = "Плохой день.";
 
-            inputString = inputString.Substring(inputString.IndexOf("Плохой") + "Плохой".Length);
+            inputString = inputString[(inputString.IndexOf("Плохой") + "Плохой".Length)..];
             Console.WriteLine(inputString);
 
             inputString = inputString.Insert(0, "Хороший");

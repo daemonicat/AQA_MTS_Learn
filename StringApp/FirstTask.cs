@@ -6,14 +6,13 @@ namespace StringApp
     {
         public static void TestToTesting()
         {
-            Console.WriteLine("Enter your string:");
-            var inputString = Console.ReadLine();
+            string? inputString = File.ReadAllText(@"..\..\..\FirstTaskIOFiles\FirstTaskInput.txt");
 
-            if (inputString == null) return;
             inputString = inputString.Replace("test", "testing");
             inputString = MyRegex().Replace(inputString, "");
 
-            Console.WriteLine($"Edited string: \n{inputString}");
+            if (!File.Exists(@"..\..\..\FirstTaskIOFiles\FirstTaskOutput.txt"))
+                File.WriteAllText(@"..\..\..\FirstTaskIOFiles\FirstTaskOutput.txt", inputString);
         }
 
         [GeneratedRegex("[0-9]", RegexOptions.IgnoreCase, "en-RU")]

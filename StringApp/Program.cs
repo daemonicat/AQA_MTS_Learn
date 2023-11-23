@@ -23,8 +23,6 @@
             Console.WriteLine(msg1.Equals(msg2));
             Console.WriteLine(msg1[0]);*/
             
-            // FirstTask.TestToTesting();
-            
             /*string f_str = "This is just an ordinary string.";
             Console.WriteLine(f_str);
             while (f_str.IndexOf('i') >= 0)
@@ -41,7 +39,10 @@
                 tmpIndex = f_str.IndexOf('i', tmpIndex) + 1;
             }*/
             
+            //FirstTask.TestToTesting();
             //SecondTask.SecondApp();
+            //ThirdTask.SplitString();
+            //FourthTask.SubstringInsert();
         }
     }
 }
