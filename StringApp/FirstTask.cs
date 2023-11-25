@@ -9,13 +9,10 @@ namespace StringApp
             string? inputString = File.ReadAllText(@"..\..\..\FirstTaskIOFiles\FirstTaskInput.txt");
 
             inputString = inputString.Replace("test", "testing");
-            inputString = MyRegex().Replace(inputString, "");
+            inputString = Regex.Replace(inputString, "[0-9]", "");
 
             if (!File.Exists(@"..\..\..\FirstTaskIOFiles\FirstTaskOutput.txt"))
                 File.WriteAllText(@"..\..\..\FirstTaskIOFiles\FirstTaskOutput.txt", inputString);
         }
-
-        [GeneratedRegex("[0-9]", RegexOptions.IgnoreCase, "en-RU")]
-        private static partial Regex MyRegex();
     }
 }
