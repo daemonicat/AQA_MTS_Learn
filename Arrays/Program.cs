@@ -1,4 +1,5 @@
-﻿//int[] array = { 1, 9, 3, 6, 5 };
+﻿using Arrays;
+//int[] array = { 1, 9, 3, 6, 5 };
 
 /*
 int[] array1;
@@ -124,18 +125,7 @@ foreach (int item in array)
 }*/
 
 Console.WriteLine("Enter task number");
-int inputNumber;
-
-var inputNumberStr = Console.ReadLine();
-try
-{
-    inputNumber = int.Parse(inputNumberStr);
-}
-catch (FormatException e)
-{
-    Console.WriteLine(e.Message);
-    return;
-}
+var inputNumber = Helpers.GetInputNumber();
 
 switch (inputNumber)
 {

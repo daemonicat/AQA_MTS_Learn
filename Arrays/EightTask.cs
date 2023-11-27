@@ -1,21 +1,33 @@
-public static class EightTask
+namespace Arrays
 {
-    public static void BubbleSort()
+    public static class EightTask
     {
-        int[] array = { 1, 6, 4, 2, 9, 5, 14, 10, 3, 7, 19, 16, 18, 8, 28, 11, 38 };
-        
-        int n = array.Length;
-        for (int i = 0; i < n - 1; i++)
-        for (int j = 0; j < n - i - 1; j++)
-            if (array[j] > array[j + 1])
-            {
-                (array[j], array[j + 1]) = (array[j + 1], array[j]);
-            }
-        
-        for (int i = 0; i <= array.GetUpperBound(0); i++)
+        public static void BubbleSort()
         {
-            Console.Write($"{array[i]} ");
-            if (i == array.GetUpperBound(0)) Console.WriteLine();
+            int[] array = { 1, 6, 4, 2, 9, 5, 14, 10, 3, 7, 19, 16, 18, 8, 28, 11, 38 };
+
+            Console.WriteLine($"There is an initial array:\n{array}");
+
+            foreach (var item in array)
+            {
+                Console.Write($"{item} ");
+            }
+
+            int n = array.Length;
+
+            for (int i = 0; i < n - 1; i++)
+            for (int j = 0; j < n - i - 1; j++)
+                if (array[j] > array[j + 1])
+                {
+                    (array[j], array[j + 1]) = (array[j + 1], array[j]);
+                }
+
+            for (int i = 0; i <= array.GetUpperBound(0); i++)
+            {
+                Console.Write($"{array[i]} ");
+            }
+
+            Console.WriteLine();
         }
     }
 }

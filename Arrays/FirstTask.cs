@@ -1,28 +1,32 @@
-public static class FirstTask
+namespace Arrays
 {
-    public static void InArrayOrNot()
+    public static class FirstTask
     {
-        var notInArray = true;
-        int[] array = { 1, 6, 4, 2, 9, 5 };
-        int inputNumber;
-
-        Console.Write("Enter your number: ");
-        var inputNumberStr = Console.ReadLine();
-        try
+        public static void InArrayOrNot()
         {
-            inputNumber = int.Parse(inputNumberStr);
-        }
-        catch (FormatException e)
-        {
-            Console.WriteLine(e.Message);
-            return;
-        }
+            var wrongInput = true;
+            var notInArray = true;
+            int[] array = { 1, 6, 4, 2, 9, 5 };
 
-        foreach (var item in array)
-        {
-            if (item == inputNumber) notInArray = false;
-        }
+            Console.WriteLine("There is an initial array:");
+            foreach (int item in array)
+            {
+                Console.Write($"{item} ");
+            }
 
-        Console.WriteLine(notInArray ? "Your number is not in array" : "Your number is in array, hoooooray!");
+            Console.WriteLine();
+            
+            Console.Write("Enter your number: ");
+            var inputNumber = Helpers.GetInputNumber();
+
+            foreach (var item in array)
+            {
+                if (item != inputNumber) continue;
+                notInArray = false;
+                break;
+            }
+
+            Console.WriteLine(notInArray ? "Your number is not in array" : "Your number is in array, hoooooray!");
+        }
     }
 }

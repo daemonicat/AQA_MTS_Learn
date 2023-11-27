@@ -1,22 +1,33 @@
-public static class SecondTask
+namespace Arrays
 {
-    public static void DeleteEntry()
+    public static class SecondTask
     {
-        int inputNumber;
-        int[] array = { 1, 6, 4, 2, 9, 5, 5, 1, 3, 7, 9, 6, 8, 8, 8, 1, 8 };
-
-        Console.Write("Enter your number: ");
-        var inputNumberStr = Console.ReadLine();
-        try
+        public static void DeleteEntry()
         {
-            inputNumber = int.Parse(inputNumberStr);
-        }
-        catch (FormatException e)
-        {
-            Console.WriteLine(e.Message);
-            return;
-        }
+            int[] array = { 1, 6, 4, 2, 9, 5, 5, 1, 3, 7, 9, 6, 8, 8, 8, 1, 8 };
 
-        array = array.Where(num => num != inputNumber).ToArray();
+            Console.WriteLine("There is an initial array:");
+
+            foreach (var item in array)
+            {
+                Console.Write($"{item} ");
+            }
+
+            Console.WriteLine();
+
+            Console.Write("Enter your number: ");
+            var inputNumber = Helpers.GetInputNumber();
+
+            var finalArray = array.Where(num => num != inputNumber).ToArray();
+
+            Console.WriteLine("There is a final array:");
+
+            foreach (var item in finalArray)
+            {
+                Console.Write($"{item} ");
+            }
+
+            Console.WriteLine();
+        }
     }
 }
