@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "typesAndOperators", "typesAndOperators\typesAndOperators.csproj", "{25279581-302D-4DD0-BBB9-2A9A652E2A6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction", "Abstraction\Abstraction.csproj", "{82444E68-4544-482C-AD82-E62FA198E821}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{25279581-302D-4DD0-BBB9-2A9A652E2A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25279581-302D-4DD0-BBB9-2A9A652E2A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25279581-302D-4DD0-BBB9-2A9A652E2A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25279581-302D-4DD0-BBB9-2A9A652E2A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82444E68-4544-482C-AD82-E62FA198E821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82444E68-4544-482C-AD82-E62FA198E821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82444E68-4544-482C-AD82-E62FA198E821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82444E68-4544-482C-AD82-E62FA198E821}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
