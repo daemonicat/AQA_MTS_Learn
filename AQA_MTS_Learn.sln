@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "Encapsulat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{96446A6D-B1B9-40AA-AF11-5715FC7C55C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework", "Homework\Homework.csproj", "{B9C890CA-D988-444F-BE16-9E215E8AED88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{96446A6D-B1B9-40AA-AF11-5715FC7C55C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96446A6D-B1B9-40AA-AF11-5715FC7C55C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96446A6D-B1B9-40AA-AF11-5715FC7C55C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9C890CA-D988-444F-BE16-9E215E8AED88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9C890CA-D988-444F-BE16-9E215E8AED88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9C890CA-D988-444F-BE16-9E215E8AED88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9C890CA-D988-444F-BE16-9E215E8AED88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
