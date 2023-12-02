@@ -17,15 +17,15 @@ public class Phone
     // Constructor with number and model parameters
     public Phone(string number, string model)
     {
-        this._number = number;
-        this._model = model;
+        _number = number;
+        _model = model;
         _weight = 243;
     }
 
     // Constructor with all parameters
     public Phone(string number, string model, int weight) : this(number, model)
     {
-        this._weight = weight;
+        _weight = weight;
     }
 
     // receiveCall method with caller name parameter
@@ -35,16 +35,16 @@ public class Phone
     }
 
     // getNumber method, returns number
-    public string GetNumber()
+    public void GetNumber()
     {
-        return _number;
+        Console.WriteLine(_number);
     }
 
     // sendMessage method, takes phone numbers to which the message will be sent as input
-    public void SendMessage(string[] recipients)
+    public void SendMessage(IEnumerable<string> recipients)
     {
         Console.WriteLine($"Message \"Hey there, are you okay?\" was sent from the number {_number} to numbers:");
-        foreach (string recipient in recipients)
+        foreach (var recipient in recipients)
             Console.WriteLine(recipient);
     }
 
