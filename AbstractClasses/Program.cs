@@ -34,3 +34,4 @@ foreach (var character in characters)
     character.Move();
     character.PrintInfo();
 }*/
+Console.WriteLine("Hello, World!");
