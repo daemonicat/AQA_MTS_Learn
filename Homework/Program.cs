@@ -1,2 +1,3 @@
-﻿namespace Homework;
+﻿using Homework.FirstTask;
 
+FirstTask.TriangleApp();
