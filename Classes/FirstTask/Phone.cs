@@ -35,7 +35,7 @@ public class Phone
     }
 
     // getNumber method, returns number
-    public void GetNumber()
+    public void PrintNumber()
     {
         Console.WriteLine(_number);
     }

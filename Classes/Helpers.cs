@@ -68,7 +68,7 @@ public static class Helpers
         phone.Print();
 
         Phone.ReceiveCall("John");
-        phone.GetNumber();
+        phone.PrintNumber();
 
         phone.SendMessage(new[] { "79990001192", "70009172819" });
         phone.SendMessage(new[] { "79990001192", "70009172819", "78123456618", "37599108263", "70198276192" });
