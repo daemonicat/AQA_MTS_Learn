@@ -2,7 +2,7 @@ namespace Homework.FirstTask;
 
 public class RightTriangle : DefaultTriangle
 {
-    public RightTriangle(int a, int b, int c) : base(a, b, c)
+    public RightTriangle(double a, double b, double c) : base(a, b, c)
     {
     }
 

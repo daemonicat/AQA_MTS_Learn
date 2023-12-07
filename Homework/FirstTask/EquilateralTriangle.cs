@@ -2,7 +2,7 @@ namespace Homework.FirstTask;
 
 public class EquilateralTriangle : DefaultTriangle
 {
-    public EquilateralTriangle(int a, int b, int c) : base(a, b, c)
+    public EquilateralTriangle(double a, double b, double c) : base(a, b, c)
     {
     }
 

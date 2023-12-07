@@ -3,7 +3,7 @@ namespace Homework.FirstTask;
 public static class TriangleFactory
 {
     // isosceles, equilateral, right, scalene triangles
-    public static DefaultTriangle CreateTriangle(int a, int b, int c)
+    public static DefaultTriangle CreateTriangle(double a, double b, double c)
     {
         if (a == b && b == c)
         {
@@ -17,7 +17,7 @@ public static class TriangleFactory
 
         if (a > b && a > c)
         {
-            if (a * a == b * b + c * c)
+            if (Math.Pow(a, 2) == Math.Pow(b, 2) + Math.Pow(c, 2))
             {
                 return new RightTriangle(a, b, c);
             }
@@ -25,7 +25,7 @@ public static class TriangleFactory
 
         if (b > a && b > c)
         {
-            if (b * b == a * a + c * c)
+            if (Math.Pow(b, 2) == Math.Pow(a, 2) + Math.Pow(c, 2))
             {
                 return new RightTriangle(a, b, c);
             }
@@ -33,7 +33,7 @@ public static class TriangleFactory
 
         if (c > a && c > b)
         {
-            if (c * c == b * b + a * a)
+            if (Math.Pow(c, 2) == Math.Pow(b, 2) + Math.Pow(a, 2))
             {
                 return new RightTriangle(a, b, c);
             }

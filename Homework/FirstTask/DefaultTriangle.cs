@@ -6,9 +6,9 @@ public class DefaultTriangle : BaseFigure
 
     public DefaultTriangle(double a, double b, double c) : base(a, b, c)
     {
-        this.A = a;
-        this.B = b;
-        this.C = c;
+        A = a;
+        B = b;
+        C = c;
     }
 
     public override double GetArea()

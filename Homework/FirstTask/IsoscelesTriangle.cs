@@ -2,25 +2,25 @@ namespace Homework.FirstTask;
 
 public class IsoscelesTriangle : DefaultTriangle
 {
-    public IsoscelesTriangle(int a, int b, int c) : base(a, b, c)
+    public IsoscelesTriangle(double a, double b, double c) : base(a, b, c)
     {
     }
 
-    public double GetIsoscelesTriangleArea()
+    public override double GetArea()
     {
-        if (Math.Abs(A - B) < 0.0001)
+        if (A.Equals(B))
         {
-            return 0.5 * C * double.Sqrt(A * A - C * C / 4);
+            return 0.5 * C * double.Sqrt(Math.Pow(A, 2) - Math.Pow(C, 2) / 4);
         }
 
-        if (Math.Abs(A - C) < 0.0001)
+        if (A.Equals(C))
         {
-            return 0.5 * B * double.Sqrt(A * A - B * B / 4);
+            return 0.5 * B * double.Sqrt(Math.Pow(A, 2) - Math.Pow(B, 2) / 4);
         }
 
-        if (Math.Abs(B - C) < 0.0001)
+        if (B.Equals(C))
         {
-            return 0.5 * A * double.Sqrt(B * B - A * A / 4);
+            return 0.5 * A * double.Sqrt(Math.Pow(B, 2) - Math.Pow(A, 2) / 4);
         }
 
         return base.GetArea();

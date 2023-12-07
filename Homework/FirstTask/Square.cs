@@ -2,7 +2,7 @@ namespace Homework.FirstTask;
 
 public class Square : BaseFigure
 {
-    public Square(int a) : base(a)
+    public Square(double a) : base(a)
     {
     }
 
