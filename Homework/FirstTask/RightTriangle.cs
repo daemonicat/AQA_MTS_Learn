@@ -6,23 +6,23 @@ public class RightTriangle : DefaultTriangle
     {
     }
 
-    public override double GetTriangleArea()
+    public override double GetArea()
     {
-        if (a > b && a > c)
+        if (A > B && A > C)
         {
-            return 0.5 * b * c;
-        }
-        
-        if (b > a && b > c)
-        {
-            return 0.5 * a * c;
-        }
-        
-        if (c > a && c > b)
-        {
-            return 0.5 * a * b;
+            return 0.5 * B * C;
         }
 
-        return base.GetTriangleArea();
+        if (B > A && B > C)
+        {
+            return 0.5 * A * C;
+        }
+
+        if (C > A && C > B)
+        {
+            return 0.5 * A * B;
+        }
+
+        return base.GetArea();
     }
 }

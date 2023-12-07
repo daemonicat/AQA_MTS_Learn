@@ -1,13 +1,13 @@
 namespace Homework.FirstTask;
 
-public class Square : Rectangle
+public class Square : BaseFigure
 {
-    public Square(int a, int b) : base(a, b)
+    public Square(int a) : base(a)
     {
     }
-    
-    public override int GetRectangleArea()
+
+    public override double GetArea()
     {
-        return a * a;
+        return Math.Pow(A, 2);
     }
 }

@@ -15,11 +15,6 @@ public static class TriangleFactory
             return new IsoscelesTriangle(a, b, c);
         }
 
-        if (a != b && b != c)
-        {
-            return new ScaleneTriangle(a, b, c);
-        }
-
         if (a > b && a > c)
         {
             if (a * a == b * b + c * c)
@@ -42,6 +37,11 @@ public static class TriangleFactory
             {
                 return new RightTriangle(a, b, c);
             }
+        }
+
+        if (a != b && b != c)
+        {
+            return new ScaleneTriangle(a, b, c);
         }
 
         return new DefaultTriangle(a, b, c);

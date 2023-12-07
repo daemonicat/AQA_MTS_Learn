@@ -1,18 +1,13 @@
 namespace Homework.FirstTask;
 
-public class Rectangle
+public class Rectangle : BaseFigure
 {
-    public int a;
-    public int b;
-
-    public Rectangle(int a, int b)
+    public Rectangle(double a, double b) : base(a, b)
     {
-        this.a = a;
-        this.b = b;
     }
 
-    public virtual int GetRectangleArea()
+    public override double GetArea()
     {
-        return a * b;
+        return A * B;
     }
 }

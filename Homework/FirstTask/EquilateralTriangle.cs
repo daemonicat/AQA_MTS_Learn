@@ -6,8 +6,8 @@ public class EquilateralTriangle : DefaultTriangle
     {
     }
 
-    public override double GetTriangleArea()
+    public override double GetArea()
     {
-        return a * a * double.Sqrt(3) / 4;
+        return Math.Pow(A, 2) * double.Sqrt(3) / 4;
     }
 }
