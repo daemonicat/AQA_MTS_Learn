@@ -39,11 +39,6 @@ public static class TriangleFactory
             }
         }
 
-        if (a != b && b != c)
-        {
-            return new ScaleneTriangle(a, b, c);
-        }
-
         return new DefaultTriangle(a, b, c);
     }
 }

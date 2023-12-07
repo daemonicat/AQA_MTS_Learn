@@ -1,10 +1,10 @@
 namespace Homework.FirstTask;
 
-public class Rectangle : BaseFigure
+public class Rectangle(double a, double b) : BaseFigure
 {
-    public Rectangle(double a, double b) : base(a, b)
-    {
-    }
+    public double A = a;
+    public double B = b;
+
 
     public override double GetArea()
     {

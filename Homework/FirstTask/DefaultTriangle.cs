@@ -1,15 +1,12 @@
 namespace Homework.FirstTask;
 
-public class DefaultTriangle : BaseFigure
+public class DefaultTriangle(double a, double b, double c) : BaseFigure
 {
+    public double A = a;
+    public double B = b;
+    public double C = c;
+    
     private double P => (A + B + C) / 2;
-
-    public DefaultTriangle(double a, double b, double c) : base(a, b, c)
-    {
-        A = a;
-        B = b;
-        C = c;
-    }
 
     public override double GetArea()
     {
