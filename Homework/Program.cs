@@ -1,5 +1,7 @@
 ﻿using Homework.FirstTask;
 using Homework.SecondTask;
+using Homework.ThirdTask;
 
-FirstTask.TriangleApp();
+// FirstTask.TriangleApp();
 // SecondTask.Hospital();
+ThirdTask.Main();
