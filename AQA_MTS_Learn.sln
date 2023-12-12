@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{1093678D-508B-4776-9519-71CE556B3B0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{C0AD95BD-125C-44DD-87C3-F070D5A71F8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1093678D-508B-4776-9519-71CE556B3B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1093678D-508B-4776-9519-71CE556B3B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1093678D-508B-4776-9519-71CE556B3B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1093678D-508B-4776-9519-71CE556B3B0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0AD95BD-125C-44DD-87C3-F070D5A71F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0AD95BD-125C-44DD-87C3-F070D5A71F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0AD95BD-125C-44DD-87C3-F070D5A71F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0AD95BD-125C-44DD-87C3-F070D5A71F8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
