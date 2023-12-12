@@ -1,3 +1,21 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Collections.IDictionary;
+using Collections.IList;
+using Collections.ISet;
 
-Console.WriteLine("Hello, World!");
+// ArrayListExample.Run();
+
+ListExample.Run();
+
+// LinkedListExample.Run();
+//
+// DictionaryExample.Run();
+//
+// SortedDictionaryExample.Run();
+//
+// SortedListExample.Run();
+//
+// HashSetExample.Run();
+//
+// StackExample.Run();
+//
+// QueueExample.Run();
