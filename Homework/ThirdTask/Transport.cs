@@ -16,5 +16,4 @@ public abstract class Transport
     {
         Console.WriteLine($"Number: {Number}, Destination: {Destination}, Departure time: {DepartureTime}, Amount of seats: {AmountSeats}");
     }
-
 }
