@@ -6,7 +6,7 @@ public static class SortedListExample
 {
     public static void Run()
     {
-        var mySortedList = new SortedList<string, int>
+        var mySortedList = new SortedList<string, int>(16)
         {
             { "Apple", 10 },
             { "Cherry", 7 },
@@ -18,6 +18,9 @@ public static class SortedListExample
         
         var containsKey = mySortedList.ContainsKey("Banana");
         Console.WriteLine($"ContainsKey(\"Banana\"): {containsKey}");
+        
+        var containsValue = mySortedList.ContainsValue(7);
+        Console.WriteLine($"ContainsValue(7): {containsValue}");
 
         if (mySortedList.TryGetValue("Apple", out var value))
         {
