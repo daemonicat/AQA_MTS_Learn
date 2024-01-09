@@ -1,4 +1,5 @@
 ﻿using Exceptions;
+using Exceptions.Homework;
 
 /*
 int[] array = new int[3];
@@ -45,4 +46,5 @@ ThrowExceptions throwExceptions = new ThrowExceptions();
 CustomExceptionUsage customExceptionUsage = new CustomExceptionUsage();
 // customExceptionUsage.Run();
 // customExceptionUsage.ProcessInput(" ");
-customExceptionUsage.UseCustomArgumentException();
+// customExceptionUsage.UseCustomArgumentException();
+Task1.Logpass();
