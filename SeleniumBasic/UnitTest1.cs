@@ -1,4 +1,4 @@
-namespace NUnitProject;
+namespace SeleniumBasic;
 
 public class Tests
 {
